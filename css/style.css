@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
     margin-bottom: 100px;
 }
@@ -27,4 +31,37 @@
     border-radius: 8px;
     padding: 9px 25px;
     cursor: pointer;
+}
+
+.cat1,
+.cat2,
+.cat3 {
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cat1 img,
+.cat2 img,
+.cat3 img {
+    width: 100px;
+}
+
+.cat1:hover img,
+.cat2:hover img,
+.cat3:hover img {
+    transform: translateY(-2px);
+    transition: transform .2s;
+}
+
+.cat1 {
+    background-image: linear-gradient(to right, rgba(255, 166, 0, 0.7), orange);
+}
+
+.cat2 {
+    background-image: linear-gradient(to right, rgba(255, 68, 0, 0.7), orangered);
+}
+
+.cat3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.7), blue);
 }
